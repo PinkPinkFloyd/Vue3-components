@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
+import './style.css'
 import router from './router'
 import { createPinia } from 'pinia'
 
@@ -13,6 +13,6 @@ app.use(router)
 app.use(ElementPlus)
 
 // Mock global properties if needed, though Composition API is preferred
-// app.config.globalProperties.$message = ... 
+// app.config.globalProperties.$message = ...
 
 app.mount('#app')
